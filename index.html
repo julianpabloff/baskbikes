@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#000000" />
+        <title>Bask Bikes</title>
+        <link rel="icon" href="assets/favicon.ico" />
+        <link rel="stylesheet" href="global.css" />
+        <link rel="stylesheet" href="style.css" />
+        <script defer src="main.js"></script>
+    </head>
+</html>
+<body>
+    <header id="header" class="max-w-container">
+        <div class="max-w justify-between">
+            <a href="/">
+                <img class="logo" src="assets/logo.png" />
+            </a>
+            <nav class="flex align-center">
+                <a href="">Carbon Repair</a>
+                <a href="">Custom Paint</a>
+            </nav>
+        </div>
+    </header>
+    <section class="landing-images">
+        <picture>
+            <source media="(width <= 600px)" srcset="assets/s5-mobile.jpg" />
+            <source media="(width > 600px)" srcset="assets/s5.jpg" />
+            <img class="main" src="assets/s5.jpg" alt="" />
+        </picture>
+        <div class="landing-grid flex">
+            <div class="half">
+                <img class="w-100" src="assets/landing-grid-0.jpg" />
+                <img class="w-100" src="assets/landing-grid-2.jpg" />
+            </div>
+            <div class="half">
+                <img class="w-100" src="assets/landing-grid-1.jpg" />
+                <img class="w-100" src="assets/landing-grid-3.jpg" />
+            </div>
+        </div>
+    </section>
+    <section class="services max-w-container">
+        <div class="max-w column">
+            <div class="image-showcase w-100 flex">
+                <div class="carbon half flex column">
+                    <h2>Services</h2>
+                    <div class="image-grid h-100">
+                        <img src="assets/services-0.jpg" style="grid-area: span 7 / span 4" />
+                        <img src="assets/services-1.jpg" style="grid-area: span 7 / span 3" />
+                        <img src="assets/services-2.jpg" style="grid-area: span 7 / span 4" />
+                        <img src="assets/services-3.jpg" style="grid-area: span 5 / span 3" />
+                        <img src="assets/services-4.jpg" style="grid-area: span 5 / span 3" />
+                        <img src="assets/services-5.jpg" style="grid-area: span 5 / span 5" />
+                    </div>
+                </div>
+                <div class="paint half">
+                    <div class="image-grid h-100">
+                        <img src="assets/services-6.jpg" style="grid-area: span 5 / span 7" />
+                        <img src="assets/services-7.jpg" style="grid-area: span 3 / span 6" />
+                        <img src="assets/services-8.jpg" style="grid-area: span 8 / span 7" />
+                        <img src="assets/services-9.jpg" style="grid-area: span 10 / span 6" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
