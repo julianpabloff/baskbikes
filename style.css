@@ -47,7 +47,7 @@ section.landing-images img.main {
 }
 
 section.services {
-    padding: min(175px, 20vw) 0;
+    padding: min(150px, 20vw) 0;
 }
 
 div.image-showcase {
@@ -135,15 +135,25 @@ div.mobile-description p:not(:last-child) {
 }
 
 section.about {
-    margin-bottom: 200px;
+    /* margin-bottom: 200px; */
+    color: white;
+    background-color: #32273e;
+    padding: 100px 0;
 }
 
-section.about div.text * {
-    width: 80%;
+section.about div.text {
+    padding: 0 4rem;
+}
+
+section.about p { 
+    max-width: 35rem;
 }
 
 section.about h2 {
     margin-bottom: 4rem;
+}
+
+section.about div.image {
 }
 
 section.about img {
@@ -151,6 +161,121 @@ section.about img {
     aspect-ratio: 4 / 5;
     object-fit: cover;
     object-position: 16% 0;
+}
+
+section.contact {
+    margin: 150px 0;
+}
+
+section.contact > div {
+    gap: min(4rem, var(--side-padding));
+}
+
+section.contact h2 {
+    margin-bottom: 3rem;
+}
+
+section.contact p:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+section.contact div.form {
+    max-width: 35rem;
+    height: min-content;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.5rem 1rem;
+}
+
+section.contact div.form > div {
+}
+
+section.contact label {
+    margin-bottom: 0.5em;
+}
+
+section.contact label span {
+    color: grey;
+    margin-left: 0.3em;
+}
+
+input, textarea, button {
+    font-family: inherit;
+    font-size: inherit;
+    background: none;
+    border-radius: 2em;
+}
+
+input, textarea {
+    /* height: min-content; */
+    width: 100%;
+    padding: 1em;
+    border: 1px solid black;
+    /* outline-offset: 0.2em; */
+}
+
+textarea {
+    resize: vertical;
+    min-height: 8rem;
+    max-height: 16rem;
+}
+
+button {
+    width: min-content;
+    white-space: nowrap;
+    padding: 1.3rem 2rem;
+    border: none;
+    color: white;
+    cursor: pointer;
+    background-color: var(--theme-color);
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: var(--link-color);
+}
+
+input:focus, textarea:focus {
+    outline: 0.3em solid var(--theme-color);
+}
+
+section.contact .span2 {
+    grid-column: span 2;
+}
+
+footer {
+    padding: 4rem 0;
+    background-color: var(--theme-color);
+}
+
+footer * {
+    color: white;
+}
+
+footer h2 {
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 800px) {
+    section.contact > div {
+        flex-direction: column;
+        gap: 4rem;
+    }
+    section.contact .half, section.about .half {
+        width: 100%;
+    }
+    section.about > div { 
+        flex-direction: column-reverse;
+        gap: 4rem;
+    }
+    section.about div.text {
+        padding: 0;
+        align-items: center;
+    }
+    section.about img {
+        aspect-ratio: 5 / 3;
+        max-width: 35rem;
+    }
 }
 
 @media screen and (max-width: 700px) {
@@ -168,13 +293,13 @@ section.about img {
     div.image-showcase .mobile-unhide {
         display: block;
     }
-
     div.description-container.mobile-hide {
         display: none;
     }
 }
 
 @media screen and (max-width: 600px) {
+    /* Change to mobile header */
     header > div {
         flex-direction: column;
         align-items: center;

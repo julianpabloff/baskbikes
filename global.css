@@ -9,7 +9,7 @@
 	--max-width-small: 900px;
     --side-padding: 6vw;
 	--theme-color: #3caee3;
-	--link-color: #64649d;
+	--link-color: #68649d;
 }
 
 @font-face{
@@ -118,8 +118,9 @@ h2, h3 {
 }
 
 h2 {
-	font-size: 5rem;
-	line-height: 5rem;
+	--h2-size: 4rem;
+	font-size: var(--h2-size);
+	line-height: var(--h2-size);
 }
 
 h3 {
@@ -146,7 +147,7 @@ img {
 
 @media screen and (max-width: 1000px) {
 	h2 {
-		font-size: 4rem;
+		--h2-size: 3rem;
 	}
 }
 

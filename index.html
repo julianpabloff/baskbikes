@@ -14,7 +14,7 @@
 <body>
     <header id="header" class="max-w-container">
         <div class="max-w justify-between">
-            <a href="/">
+            <a href="">
                 <img class="logo" src="assets/logo.png" />
             </a>
             <nav class="flex align-center">
@@ -115,13 +115,49 @@
     </section>
     <section class="about max-w-container">
         <div class="max-w">
-            <div class="image half">
+            <div class="image half flex justify-center">
                 <img class="w-100" src="assets/jump.jpg" />
             </div>
-            <div class="text half flex column justify-center align-center">
+            <div class="text half flex column justify-center">
                 <h2>About Bask</h2>
                 <p>My name is John Wiley, I am an extremely avid cyclist from BMX, Dirt jumping, MTB all the way to road. I have been biking my whole life and working in the bike industry for 10 years. I am a top level mechanic with extensive knowledge from full suspension to a specialty in TT bikes. I am a general expert in all things bikes and very passionate about what I do. If I can’t answer your question I can certainly figure out how to.</p>
             </div>
         </div>
     </section>
+    <section class="contact max-w-container">
+        <div class="max-w">
+            <div class="flex column half">
+                <h2>Contact Us</h2>
+                <p>Fill out your info here to get a quote on any type of work or if you have any questions.</p>
+                <p>Email: <a href="mailto:johnw@baskbikes.com" target="_blank">JohnW@BaskBikes.com</a></p>
+                <p>Instagram: <a href="https://www.instagram.com/baskbikes/" target="_blank">@BaskBikes</a></p>
+            </div>
+            <div class="form half">
+                <div class="flex column">
+                    <label for="firstname">First Name <span>(required)</span></label>
+                    <input id="firstname" type="text" required />
+                </div>
+                <div class="flex column">
+                    <label for="lastname">Last Name <span>(required)</span></label>
+                    <input id="lastname" type="text" required />
+                </div>
+                <div class="flex column span2">
+                    <label for="email">Email <span>(required)</span></label>
+                    <input id="email" class="span2" type="text" required />
+                </div>
+                <div class="flex column span2">
+                    <label for="message">Message <span>(required)</span></label>
+                    <textarea id="message" class="span2" required></textarea>
+                </div>
+                <button type="button">Send It</button>
+            </div>
+        </div>
+    </section>
+    <footer class="max-w-container">
+        <div class="max-w column">
+            <div>
+            <h2>Bask Bikes LLC</h2>
+            <p style="color: black;">Austin, TX</p>
+        </div>
+    </footer>
 </body>
