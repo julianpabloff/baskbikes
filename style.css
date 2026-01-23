@@ -51,14 +51,11 @@ section.services {
 }
 
 div.image-showcase {
-    --h2-height: 7rem;
-    /* height: 700px; */
     aspect-ratio: 2 / 1;
     gap: 1rem;
 }
 
 div.image-showcase h2 {
-    height: var(--h2-height);
 }
 
 section.services div.image-grid {
@@ -69,7 +66,8 @@ section.services div.image-grid {
 }
 
 section.services div.carbon div.image-grid {
-    height: calc(100% - var(--h2-height));
+    /* height: calc(100% - var(--h2-height)); */
+    height: calc(100% - var(--h2-size) - 2rem);
 	grid-template-columns: repeat(11, 1fr);
 	grid-template-rows: repeat(12, 1fr);
 }
@@ -138,6 +136,7 @@ section.about {
     /* margin-bottom: 200px; */
     color: white;
     background-color: #32273e;
+    /* background-color: var(--bask-purple); */
     padding: 100px 0;
 }
 
@@ -227,16 +226,16 @@ button {
     border: none;
     color: white;
     cursor: pointer;
-    background-color: var(--theme-color);
+    background-color: var(--bask-blue);
     transition: background-color 0.2s;
 }
 
 button:hover {
-    background-color: var(--link-color);
+    background-color: var(--bask-purple);
 }
 
 input:focus, textarea:focus {
-    outline: 0.3em solid var(--theme-color);
+    outline: 0.3em solid var(--bask-blue);
 }
 
 section.contact .span2 {
@@ -244,15 +243,15 @@ section.contact .span2 {
 }
 
 footer {
-    padding: 4rem 0;
-    background-color: var(--theme-color);
+    padding: 5rem 0;
+    background-color: var(--bask-blue);
 }
 
 footer * {
     color: white;
 }
 
-footer h2 {
+footer h1 {
     margin-bottom: 1rem;
 }
 

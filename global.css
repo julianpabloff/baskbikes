@@ -8,8 +8,10 @@
 	--max-width: 1400px;
 	--max-width-small: 900px;
     --side-padding: 6vw;
-	--theme-color: #3caee3;
+	--bask-blue: #3caee3;
 	--link-color: #68649d;
+	--bask-purple: #501f50;
+	--h2-size: 4rem;
 }
 
 @font-face{
@@ -113,14 +115,24 @@ html {
 
 h2, h3 {
 	font-weight: normal;
-	color: var(--theme-color);
+	color: var(--bask-blue);
 	letter-spacing: 0.03em;
 }
 
+h1 {
+	font-size: 3rem;
+	line-height: 3rem;
+}
+
 h2 {
-	--h2-size: 4rem;
+	width: min-content;
+	height: min-content;
+	padding: 0.05em 0.9em 0.05em 0.2em;
 	font-size: var(--h2-size);
 	line-height: var(--h2-size);
+	white-space: nowrap;
+	text-shadow: 0.08em 0 var(--bask-purple);
+	background-color: black;
 }
 
 h3 {
